@@ -10,8 +10,6 @@ Killing Floor 2 Dedicated Outbreaks
 
 A guide to play any weekly outbreak any time you want.
 
-*Save a [copy](https://github.com/ubihazard/kf2-dedicated-outbreaks) of this guide in case if it gets censored on Steam forums.*
-
 Weekly Outbreaks
 ----------------
 
