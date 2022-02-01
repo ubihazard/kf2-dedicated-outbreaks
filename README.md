@@ -257,6 +257,12 @@ Restart NetTime, KF2 dedicated server, and the game client (in this order).
 
 In order to return all things back to normal, close/exit everything and re-enable time synchronization in Windows Control Panel to restore your system clock with proper date & time. After your clock is back to normal remove all `time.google.com` entries you’ve added earlier from `C:\Windows\System32\drivers\etc\hosts`.
 
+It might also be necessary to repeat this command in administrator command prompt:
+
+```bat
+ipconfig /flushdns
+```
+
 You are good to go.
 
 Conclusion
