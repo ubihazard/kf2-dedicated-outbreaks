@@ -17,7 +17,7 @@ As you all know, the weekly outbreaks are a set of special mutations for regular
 
 With this came the problem of actually being able to play a desired weekly. Survival Weekly game mode follows an automatic pre-configured rotation and does not allow one to just start any weekly they want at moment’s notice. This means that if you miss a certain outbreak, you would have to wait a whopping 15 weeks before it reaches its rotation and becomes playable again. Unfortunately, the developers did not provide any QoL improvement to this situation so far, even solo offline.
 
-Luckily, I’ve discovered a way to circumvent this restriction locally. Killing Floor 2 uses internet time servers to obtain precise time and choose the appropriate weekly from rotation. The trick is to set up your own time server configured with time ahead in the future, a dedicated server running in Weekly Survival game mode, and redirect time requests made by KF2 to your own machine instead of internet. This will effectively cause both server and the game client to switch to a different weekly, or the one you want it to use. The method described in this guide is completely legitimate and allows you to earn weekly rewards by completing them in a usual manner in a solo multiplayer game on your own dedicated server.
+Luckily, I’ve discovered a way to circumvent this restriction locally. Killing Floor 2 uses internet time servers to obtain precise time and choose the appropriate weekly from rotation. The trick is to set up your own time server configured with time ahead in the future, a dedicated server running in Weekly Survival game mode, and redirect time requests made by KF2 to your own machine instead of internet. This will effectively cause both the server and the game client to switch to a different weekly, or the one you want it to use. The method described in this guide is completely legitimate and allows you to earn weekly rewards by completing them in a usual manner in a solo multiplayer game on your own dedicated server.
 
 The whole process is incredibly complicated, but doable. This guide assumes an experienced user so please, don’t attempt this guide if you find installing and configuring a dedicated server to be a difficult task.
 
@@ -86,7 +86,7 @@ The [official](https://wiki.killingfloor2.com/index.php?title=Dedicated_Server_(
 
 ### Enabling Steam Workshop Integration
 
-(This step is optional. Skip ahead to next section if you don’t care about having Workshop on your server right now.)
+*(This step is optional. Skip ahead to next section if you don’t care about having Workshop on your server right now.)*
 
 Open `KFGame\Config\PCServer-KFEngine.ini`, find the `[IpDrv.TcpNetDriver]` section and make sure it contains the following line:
 
@@ -107,7 +107,7 @@ For each Workshop item you would need to add similar line to this section with a
 
 ### Enabling Workshop Maps on Your Server
 
-(This step is optional. Skip ahead to next section if you don’t care about having Workshop maps on your server right now.)
+*(This step is optional. Skip ahead to next section if you don’t care about having Workshop maps on your server right now.)*
 
 You will need to take some additional steps in order to add custom Workshop maps to your dedicated server and make them available in map rotation. Simply listing them in the `[OnlineSubsystemSteamworks.KFWorkshopSteamworks]` section of `PCServer-KFEngine.ini` isn’t enough.
 
@@ -171,7 +171,7 @@ Go back to control panel and change your system time incrementing it by week(s) 
 
 (The list then wraps around.)
 
-What this means is that if your current weekly is “Beefcake” and you want to play “Abandon All Hope”, then you would have to add 14 - 8 -> 6 weeks of time to your current time in order to get “Abandon All Hope”.
+What this means is that if your current weekly is “Beefcake” and you want to play “Abandon All Hope”, then you would have to add `14 - 8 -> 6` weeks of time to your current time in order to get “Abandon All Hope”.
 
 Once time is changed, restart NetTime again as administrator. NetTime screen now would look something like this, indicating that everything is working as intended:
 
