@@ -249,9 +249,7 @@ Swtching Outbreaks and Getting Things Back to Normal
 
 To start another outbreak you need to stop KF2 game client, dedicated server, and NetTime. Remember you need to exit NetTime via system tray icon: just closing its window doesn’t stop it.
 
-Change your system clock time again to get appropriate weekly.
-
-Restart NetTime, KF2 dedicated server, and the game client (in this order).
+Change your system clock time again to get appropriate weekly. Restart NetTime, KF2 dedicated server, and the game client (in this order).
 
 In order to return all things back to normal, close/exit everything and re-enable time synchronization in Windows Control Panel to restore your system clock with proper date & time. After your clock is back to normal remove all `time.google.com` entries you’ve added earlier from `C:\Windows\System32\drivers\etc\hosts`.
 
