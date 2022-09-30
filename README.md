@@ -8,7 +8,9 @@ Killing Floor 2 Dedicated Outbreaks
 ![Weekly outbreaks](img/logo.png)
 -->
 
-A guide to play any weekly outbreak any time you want.
+*This [Steam guide](https://steamcommunity.com/sharedfiles/filedetails/?id=2738425105 "View") had to be reposted here on GitHub because apparently some degenerate with moderator permissions on Steam, or some automated system, kept messing it up, for unknown reason.*
+
+A guide to play any weekly outbreak any time you want. This guide will be useful to anyone still playing [Killing Floor 2](https://wiki.killingfloor2.com/index.php?title=Main_Page "Wiki"). It is still relevant in 2022 as no fix to remedy the situation has been released yet.
 
 Weekly Outbreaks
 ----------------
@@ -18,6 +20,8 @@ As you all know, the weekly outbreaks are a set of special mutations for regular
 With this came the problem of actually being able to play a desired weekly. Survival Weekly game mode follows an automatic pre-configured rotation and does not allow one to just start any weekly they want at moment’s notice. This means that if you miss a certain outbreak, you would have to wait a whopping 15 weeks before it reaches its rotation and becomes playable again. Unfortunately, the developers did not provide any QoL improvement to this situation so far, even solo offline.
 
 Luckily, I’ve discovered a way to circumvent this restriction locally. Killing Floor 2 uses internet time servers to obtain precise time and choose the appropriate weekly from rotation. The trick is to set up your own time server configured with time ahead in the future, a dedicated server running in Weekly Survival game mode, and redirect time requests made by KF2 to your own machine instead of internet. This will effectively cause both the server and the game client to switch to a different weekly, or the one you want it to use. The method described in this guide is completely legitimate and allows you to earn weekly rewards by completing them in a usual manner in a solo multiplayer game on your own dedicated server.
+
+*__Update:__ looks like it is no longer necessary to install dedicated server in order to be able to obtain weekly rewards. The whole “Setting Up Killing Floor 2 Dedicated Server” step can be thus skipped. Continue with the “Setting Up Local SNTP Time Server” step and simply choose “Solo Offline” and the “Weekly” game mode after Killing Floor 2 loads up. The dedicated server portion of this guide will be preserved for reference or in case if it’s needed again.*
 
 The whole process is incredibly complicated, but doable. This guide assumes an experienced user so please, don’t attempt this guide if you find installing and configuring a dedicated server to be a difficult task.
 
@@ -173,7 +177,7 @@ Go back to control panel and change your system time incrementing it by week(s) 
 
 What this means is that if your current weekly is “Beefcake” and you want to play “Abandon All Hope”, then you would have to add `14 - 8 -> 6` weeks of time to your current time in order to get “Abandon All Hope”.
 
-Once time is changed, restart NetTime again as administrator. NetTime screen now would look something like this, indicating that everything is working as intended:
+Once time is changed, restart NetTime again as administrator. NetTime screen would now look something like this, indicating that everything is working as intended:
 
 ![NetTime with manually configured time](img/screenshots/NetTime_Status_Good.webp)
 
@@ -206,6 +210,8 @@ Excellent. Now we just need to restart the dedicated server we configured earlie
 Starting the Game
 -----------------
 
+*__Update:__ looks like it is no longer necessary to set up dedicated server in order to be able to obtain weekly rewards. Simply load Killing Floor 2 and choose “Solo Offline” and the “Weekly” game mode after configuring the time-spoofing server. The dedicated server portion of this guide is preserved just in case if it’s needed again.*
+
 Start the dedicated server using the startup script you created before. Hopefully your server is configured properly and it will soon load Burning Paris in Survival Weekly game mode. You can now change the map by reaching the web interface of your running server by pointing your browser to http://127.0.0.1:8080. Log in as administrator in the presented web form and you will be taken to the server home screen. The button to change map is at the top left.
 
 Finally! About damn *time* (pun intended). Start Killing Floor 2 and once the game loads up, the weekly should be changed to the one chosen by you. If it doesn’t change, well that means you did something wrong. Carefully review this guide again, find the mistake, and retrace your steps. If the weekly is right, bring the developer console by pressing <kbd>~</kbd> and type:
@@ -220,8 +226,8 @@ Press <kbd>~</kbd> again to hide the console, type your regular (not administrat
 
 Have fun completing the outbreak!
 
-Proofs
-------
+It Works!
+---------
 
 Here are some screenshots of ahead-of-time completed weekly outbreaks and their rewards.
 
@@ -251,7 +257,7 @@ To start another outbreak you need to stop KF2 game client, dedicated server, an
 
 Change your system clock time again to get appropriate weekly. Restart NetTime, KF2 dedicated server, and the game client (in this order).
 
-In order to return all things back to normal, close/exit everything and re-enable time synchronization in Windows Control Panel to restore your system clock with proper date & time. After your clock is back to normal remove all `time.google.com` entries you’ve added earlier from `C:\Windows\System32\drivers\etc\hosts`.
+To return all things back to normal, close everything and re-enable time synchronization in Windows Control Panel to restore your system clock with proper date & time. After your clock is in order again, remove all `time.google.com` entries you’ve added earlier from `C:\Windows\System32\drivers\etc\hosts`.
 
 It might also be necessary to repeat this command in administrator command prompt:
 
@@ -270,7 +276,7 @@ Depends on how much you value your time. If you don’t want to wait half a year
 
 Take care, stay safe, and have a good time.
 
-Support
--------
+⭐ Support
+---------
 
-If you find this guide useful, you can [buy me a ☕](https://www.buymeacoffee.com/ubihazard "Show support")!
+If you find this guide useful, you can [buy me a ☕](https://www.buymeacoffee.com/ubihazard "Donate")!
