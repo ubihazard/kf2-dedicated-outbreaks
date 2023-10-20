@@ -16,7 +16,7 @@ Killing Floor 2 Dedicated Outbreaks
 
 **Update 1:** this guide is still relevant in 2022 as no fix to remedy the situation has been released yet.
 
-A guide to play any weekly outbreak any time you want. This guide will be useful to anyone still playing [Killing Floor 2](https://wiki.killingfloor2.com/index.php?title=Main_Page "Wiki"). It is still relevant in 2022 as no fix to remedy the situation has been released yet.
+A guide to play any weekly outbreak any time you want. This guide will be useful to anyone still playing [Killing Floor 2](https://wiki.killingfloor2.com/index.php?title=Main_Page "Wiki").
 
 Weekly Outbreaks
 ----------------
