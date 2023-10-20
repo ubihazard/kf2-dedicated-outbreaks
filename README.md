@@ -10,7 +10,11 @@ Killing Floor 2 Dedicated Outbreaks
 
 *This [Steam guide](https://steamcommunity.com/sharedfiles/filedetails/?id=2738425105 "View") had to be reposted here on GitHub because apparently some degenerate with moderator permissions on Steam, or some automated system, kept messing it up, for unknown reason.*
 
-**Update:** Fall 2023 update *finally* adds weekly mode selector to play any mode anytime you want. *However,* you would still unlock reward *only for the currently scheduled weekly...* Therefore it is useless if you want to unlock several weekly rewards ahead of time. So this guide is still relevant.
+**Update 3:** with the official release of fall 2023 update, this workaround doesn’t appear to work anymore. Developer has implemented additional checks to prevent match from starting. There’s also an issue with profile loading after activating time spoofing. This guide and this page will be kept for archival purposes. It’s going to take **a lot** of time to collect all weekly rewards now if you didn’t take advantage of this method while it was still working.
+
+**Update 2:** Fall 2023 update *finally* adds weekly mode selector to play any mode anytime you want. *However,* you would still unlock reward *only for the currently scheduled weekly...* Therefore it is useless if you want to unlock several weekly rewards ahead of time. So this guide is still relevant.
+
+**Update 1:** this guide is still relevant in 2022 as no fix to remedy the situation has been released yet.
 
 A guide to play any weekly outbreak any time you want. This guide will be useful to anyone still playing [Killing Floor 2](https://wiki.killingfloor2.com/index.php?title=Main_Page "Wiki"). It is still relevant in 2022 as no fix to remedy the situation has been released yet.
 
